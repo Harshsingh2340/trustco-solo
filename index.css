@@ -1,29 +1,73 @@
-/* Basic styles for visualization */
-body {
-    font-family: Arial, sans-serif;
+/* Global box-sizing to simplify layout calculations */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Define color palette using CSS variables */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #ff5722;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header, main, and footer padding and margins */
   header,
   main,
   footer {
     padding: 20px;
-    border-bottom: 1px solid #ddd;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
+  /* Consistent spacing scale (using 8px multiples) */
+  section {
+    margin-bottom: 16px;
   }
   
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
+  /* Example button styling */
+  button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   
-  footer {
-    text-align: center;
-    margin-top: 20px;
+  button:hover {
+    background-color: #e64a19;
   }
   
